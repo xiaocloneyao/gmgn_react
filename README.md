@@ -303,3 +303,4 @@ MIT License
 
 **项目维护者**: GMGN.AI Development Team  
 **最后更新**: 2024
+trigger
