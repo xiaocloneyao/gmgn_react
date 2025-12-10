@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -42,7 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './build'   # ← 修复点（React 输出目录）
+          path: './dist'   # ← Vite 项目正确路径
 
       - name: Deploy to GitHub Pages
         id: deployment
