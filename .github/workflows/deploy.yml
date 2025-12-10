@@ -42,7 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './build'   # ← 修复点（React 输出目录）
 
       - name: Deploy to GitHub Pages
         id: deployment
